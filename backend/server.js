@@ -29,10 +29,10 @@ app.get('/table/:table', (req, res) => {
 
 /* POST ******************************************************************/
 
-app.post('/user', (req, res) => {
-  knex('user')
+app.post('/users', (req, res) => {
+  knex('users')
     .insert(req.body)
-    .then(data => res.status(201).send("Post to user table was successful"))
+    .then(data => res.status(201).send("Post to users table was successful"))
 })
 
 app.post('/item', (req, res) => {
@@ -43,8 +43,8 @@ app.post('/item', (req, res) => {
 
 /* DELETE ****************************************************************/
 
-app.delete('/user/:id', (req, res) => {
-  knex('user').where('id', req.params.id)
+app.delete('/users/:id', (req, res) => {
+  knex('users').where('id', req.params.id)
     .del()
     .then(data => res.status(200).send(`Deleted user ${req.params.id}`))
 })
@@ -57,8 +57,8 @@ app.delete('/item/:id', (req, res) => {
 
 /* PATCH *****************************************************************/
 
-app.patch('/user/:id', (req, res) => {
-  knex('user').where('id', req.params.id)
+app.patch('/users/:id', (req, res) => {
+  knex('users').where('id', req.params.id)
     .update(req.body)
     .then(data => res.status(200)
       .send(`Patched user ${req.params.id}`)
@@ -75,8 +75,8 @@ app.patch('/item/:id', (req, res) => {
 
 /* PUT *******************************************************************/
 
-app.put('/user/:id', (req, res) => {
-  knex('user').where('id', req.params.id)
+app.put('/users/:id', (req, res) => {
+  knex('users').where('id', req.params.id)
     .update({
       first_name: req.body.first_name || null, 
       last_name:  req.body.last_name || null, 

@@ -6,7 +6,7 @@ exports.up = function(knex) {
   return knex.schema.createTable('item', table => {
     table.increments('id'); // adds an auto incrementing PK column
     table.integer('user_id');
-    table.foreign('user_id').references('user.id');
+    table.foreign('user_id').references('users.id');
     table.string('item_name');
     table.string('description');
     table.integer('quantity');
