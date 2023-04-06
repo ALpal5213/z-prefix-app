@@ -32,13 +32,13 @@ const Login = () => {
   return (  
     <Container>
       <Row>
-        <Col>
+        <Col className="input-wrapper">
           {!signup && <h3>Login Here</h3>}
           {!signup && <h5 onClick={() => {setSignup(true)}}>Or Sign Up</h5>}
-          {!signup && <label>Username</label>}
-          {!signup && <input type="text" placeholder="Type in Username" onChange={(e) => {setUsername(e.target.value)}}/>}
-          {!signup && <label>Password</label>}
-          {!signup && <input type="password" placeholder="Type in Password" onChange={(e) => {setPassword(e.target.value)}}/>}
+          {!signup && <label className="input-block">Username</label>}
+          {!signup && <input className="input-block" type="text" placeholder="Type in Username" onChange={(e) => {setUsername(e.target.value)}}/>}
+          {!signup && <label className="input-block">Password</label>}
+          {!signup && <input className="input-block" type="password" placeholder="Type in Password" onChange={(e) => {setPassword(e.target.value)}}/>}
           {!signup && <button type="button" onClick={() => {
             users.forEach((user) => {
               if(user.username === username && user.password === password) {
@@ -51,14 +51,14 @@ const Login = () => {
 
           {signup && <h3>Sign Up Here</h3>}
           {signup && <h5 onClick={() => {setSignup(false)}}>Or Back to Login</h5>}
-          {signup && <label>Tell Us Your First Name</label>}
-          {signup && <input type="text" onChange={(e) => {setFirstName(e.target.value)}}/>}
-          {signup && <label>Tell Us Your Last Name</label>}
-          {signup && <input type="text" onChange={(e) => {setLastName(e.target.value)}}/>}
-          {signup && <label>Set Username</label>}
-          {signup && <input type="text" placeholder="Type in New Username" onChange={(e) => {setUsername(e.target.value)}}/>}
-          {signup && <label>Password</label>}
-          {signup && <input type="password" placeholder="Type in New Password" onChange={(e) => {setPassword(e.target.value)}}/>}
+          {signup && <label className="input-block">Tell Us Your First Name</label>}
+          {signup && <input className="input-block" type="text" onChange={(e) => {setFirstName(e.target.value)}}/>}
+          {signup && <label className="input-block">Tell Us Your Last Name</label>}
+          {signup && <input className="input-block" type="text" onChange={(e) => {setLastName(e.target.value)}}/>}
+          {signup && <label className="input-block">Set Username</label>}
+          {signup && <input className="input-block" type="text" placeholder="Type in New Username" onChange={(e) => {setUsername(e.target.value)}}/>}
+          {signup && <label className="input-block">Password</label>}
+          {signup && <input className="input-block" type="password" placeholder="Type in New Password" onChange={(e) => {setPassword(e.target.value)}}/>}
           {signup && <button type="button" onClick={handleSignUp}>Sign Up</button>}
         </Col>
       </Row>

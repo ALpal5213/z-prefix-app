@@ -15,8 +15,8 @@ function App() {
   const Navigate = useNavigate();
   const [items, setItems] = useState([]);
   const [users, setUsers] = useState([]);
-  const [currentUser, setCurrentUser] = useState(null);
-  const [currentItem, setCurrentItem] = useState(null);
+  const [currentUser, setCurrentUser] = useState(undefined);
+  const [currentItem, setCurrentItem] = useState(undefined);
   const [loggedIn, setLoggedIn] = useState(false);
   const [update, setUpdate] = useState(false);
 
@@ -27,7 +27,16 @@ function App() {
 
     fetch('http://localhost:7999/table/item')
       .then(res => res.json())
-      .then(data => setItems(data))
+      .then(data => {
+        setItems(data)
+        if(currentItem !== undefined) {
+          for(let item of data) {
+            if(item.id === currentItem.id) {
+              setCurrentItem(item);
+            }           
+          }  
+        }
+      })
   }, [loggedIn, update])
 
   

@@ -1,0 +1,24 @@
+.card-col {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.card-container {
+  border: solid black 1px;
+  border-radius: 10px;
+  height: 340px;
+  width: 200px;
+  text-align: center;
+  box-shadow: 3px 3px 3px;
+}
+
+.card-container:hover {
+  cursor: pointer;
+  margin-top: -5px;
+}
+
+.card-image {
+  max-width: 100%;
+  max-height: 100px;
+}

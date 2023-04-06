@@ -60,17 +60,13 @@ app.delete('/item/:id', (req, res) => {
 app.patch('/users/:id', (req, res) => {
   knex('users').where('id', req.params.id)
     .update(req.body)
-    .then(data => res.status(200)
-      .send(`Patched user ${req.params.id}`)
-    )
+    .then(data => res.status(200).send(`Patched user ${req.params.id}`))
 })
 
 app.patch('/item/:id', (req, res) => {
   knex('item').where('id', req.params.id)
     .update(req.body)
-    .then(data => res.status(200)
-      .send(`Patched item ${req.params.id}`)
-    )
+    .then(data => res.status(200).send(`Patched item ${req.params.id}`))
 })
 
 /* PUT *******************************************************************/
@@ -84,9 +80,7 @@ app.put('/users/:id', (req, res) => {
       password:  req.body.password || null, 
       account:  req.body.account || null
     })
-    .then(data => res.status(200)
-      .send(`Put user ${req.params.id}`)
-    )
+    .then(data => res.status(200).send(`Put user ${req.params.id}`))
 })
 
 app.put('/item/:id', (req, res) => {
@@ -98,9 +92,7 @@ app.put('/item/:id', (req, res) => {
       quantity:  req.body.quantity || null, 
       image:  req.body.image || null
     })
-    .then(data => res.status(200)
-      .send(`Put item ${req.params.id}`)
-    )
+    .then(data => res.status(200).send(`Put item ${req.params.id}`))
 })
 
 /* OTHER *****************************************************************/

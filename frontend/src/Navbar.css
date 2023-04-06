@@ -1,0 +1,36 @@
+.nav-container {
+  background-color: #151545;
+  color: white;
+  padding-bottom: 0px;
+  margin-bottom: 20px;
+
+}
+
+.nav-center {
+  text-align: center;
+}
+
+.nav-right {
+  text-align: right;
+}
+
+.nav-home {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.nav-home:hover {
+  font-size: 42px;
+  margin-bottom: -3px;
+  cursor: pointer;
+}
+
+.nav-text {
+  font-size: 20px;
+}
+
+.nav-route:hover {
+  font-size: 22px;
+  margin-bottom: -3px;
+  cursor: pointer;
+}
