@@ -1,7 +1,7 @@
 # Adrian Lewis's Z-Prefix CRUD App
 
 ## Running the app
-The app is wrapped in a docker container and assuming everything works properly, you should be able to run the following commands.
+The app is wrapped in a docker container and assuming everything works properly, you should be able to run the following commands once you clone the repo. The commands should be run in the root directory.
 
 `docker-compose up`
 
