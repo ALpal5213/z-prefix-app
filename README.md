@@ -107,7 +107,6 @@ A visual of each of these features can be seen in the images below.
 <summary>Images of Webpage</summary>
 <br>
   Home Page:
-  ![home_page](https://user-images.githubusercontent.com/97071804/230525166-8cf5893e-b16b-4a40-8df7-0fe59fcb2f4c.png)
 
   ![home_page](https://user-images.githubusercontent.com/97071804/230524039-8a74c6c0-2647-429e-894d-d1c9bc44c3bf.png)
 
