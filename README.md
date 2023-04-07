@@ -12,7 +12,7 @@ To bring it down and remove docker images, you can run...
 `docker-compose down --rmi all`
 
 ## If that doesn't work...
-You should be able to run it as you typically would. I used the docker run command from the database learn content to create a docker container and naviagte into it.
+You should be able to run it as you typically would. I used the docker run commands from the database learn content to create a docker container and navigate into it.
 
 ```
 docker run --rm --name pg-docker -e POSTGRES_PASSWORD=docker -d -p 5432:5432 \
