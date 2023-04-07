@@ -1,11 +1,11 @@
 # Adrian Lewis's Z-Prefix CRUD App
 
 ## Running the app
-The app is wrapped in a docker container and assuming everything works properly, you should be able to run the following commands once you clone the repo. The commands should be run in the root directory.
+You should be able to run the following commands once you clone the repo. The commands should be run in the root directory.
 
-`docker-compose up`
+`./start-script.sh`
 
-Then, navigate to http://localhost:3000
+Wait for everything to install (Could take a minute or two), then navigate to http://localhost:3000
 
 To bring it down and remove docker images, you can run...
 
@@ -28,7 +28,6 @@ psql -U postgres
 Once the container is created, the database will also need to be created. I named mine `inventorydb`
 
 `CREATE DATABASE inventorydb;`
-
 
 The knex file development section inside the backend directory will also need to be modified to have 'localhost' instead of 'db'
 
