@@ -42,7 +42,7 @@ This will install necessary packages and then start up port 3000. Navigating to 
 ## Notes when using the website
 The website does not have any cookies or local storage so refreshing will reset the state variables. This may cause you to see an empty page or some buggy behavior. If this happens, try navigating back to http://localhost:3000 and refreshing the page.
 
-The website consists of 4 different pages Home, Login, MyInventory, and Details. The home page is where you will first arrive to and you will be able to see all items on the page. To log in, click the log in button on the navigation bar. The Login page will allow you to log in to an existing account or sign up and add an account. A list of seeded accounts can be seen in the dropdown.
+The website consists of 4 different pages Home, Login, MyInventory, and Details. The home page is where you will first arrive to and you will be able to see all items on the page, search for an item, and select any item even if you are not logged in. To log in, click the log in button on the navigation bar. The Login page will allow you to log in to an existing account or sign up and add an account. A list of seeded accounts can be seen in the dropdown.
 
 <details>
 <summary>Seeded User Accounts</summary>
@@ -50,6 +50,7 @@ The website consists of 4 different pages Home, Login, MyInventory, and Details.
   Adrian Lewis 
     username: 'abc'
     password: '123'
+  
   {first_name: 'Joe', last_name: 'Shmoe', username: null, password: null},
   {first_name: 'Slim', last_name: 'Shady', username: 'def', password: '123'},
   {first_name: 'Lady Emilia Von Eldritch', last_name: 'the 17th', username: 'ghi', password: '123'},
@@ -59,22 +60,32 @@ The website consists of 4 different pages Home, Login, MyInventory, and Details.
   {first_name: 'Random', last_name: 'Person', username: 'stu', password: '123'},
   {first_name: 'Random', last_name: 'Person', username: 'vwx', password: '123'},
   {first_name: 'Random', last_name: 'Person', username: 'yz', password: '123'},
-  
 </details>
 
+After logging in the user will be sent to the MyInventory page where they will be presented with all items that belong to the logged in user. On the MyInventory page, you can also add items to the personal inventory. 
+
+If you click on an item card on the Home page or the MyInventory page, a details page will appear. The details page containse all information about the item including the item's name, quantity, description, and a random image that I selected. If a user is logged in, they have the ability to edit or delete an item from the details page. Editing an item will open up input fields for each editable section.
+
+A visual of each of these features can be seen in the images below.
 
 <details>
 <summary>Images of Webpage</summary>
 <br>
-  Home Page:
+  ###Home Page:
+![home_page](https://user-images.githubusercontent.com/97071804/230523103-dc17881f-e9bb-44b0-a5b2-27fe453fa1f1.png)
+  
+  ###Login Page:
+  ![login_page_login](https://user-images.githubusercontent.com/97071804/230523646-236aaff7-d771-4ea3-9084-e04d512572ad.png)
+![login_page_signup](https://user-images.githubusercontent.com/97071804/230523655-d194b888-e36e-4811-981b-b9c60f591921.png)
+  
+  ###MyInventory Page:
+  ![myinventory_page](https://user-images.githubusercontent.com/97071804/230523713-315c58b4-08d0-41fd-ae61-643343b89a8f.png)
+![myinventory_page_add](https://user-images.githubusercontent.com/97071804/230523718-78c83af9-11f2-4979-a0cf-e518b7f8be3b.png)
+  
+  ###Details Page:
+  ![details_page](https://user-images.githubusercontent.com/97071804/230523745-8d7f5b8f-ac54-47c5-848e-149d98c86898.png)
+![details_page_edit](https://user-images.githubusercontent.com/97071804/230523757-1a790ed9-ea79-4ebf-9fb7-e5081f383950.png)
 
-  Login Page:
-  
-  MyInventory Page:
-  
-  Details Page:
-  
-  Edit on Details Page:
   
 </details>
   
