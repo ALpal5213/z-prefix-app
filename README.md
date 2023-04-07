@@ -49,50 +49,51 @@ The website consists of 4 different pages Home, Login, MyInventory, and Details.
   <br>
   Adrian Lewis 
   <br>
-    username: 'abc', password: '123'
+  username: 'abc', password: '123'
   <br>
   <br>
   Joe Shmoe (can't log in)
   <br>
-    username: null, password: null
+  username: null, password: null
   <br>
   <br>
   Slim Shady 
   <br>
-    username: 'def', password: '123'
+  username: 'def', password: '123'
   <br>
   <br>
   Lady Emilia Von Eldritch the 17th
   <br>
-    username: 'ghi', password: '123'},
-  <br>
-  <br>
-   Random Person 
-   <br>
-    username: 'jkl', password: '123'
+  username: 'ghi', password: '123'},
   <br>
   <br>
   Random Person 
   <br>
-    username: 'mno', password: '123'
+  username: 'jkl', password: '123'
   <br>
   <br>
   Random Person 
   <br>
-    username: 'pqr', password: '123'
+  username: 'mno', password: '123'
+  <br>
+  <br>
+  Random Person 
+  <br>
+  username: 'pqr', password: '123'
   <br>
   <br>
   Random Person
   <br>
-    username: 'stu', password: '123'
+  username: 'stu', password: '123'
   <br>
   <br>
   Random Person 
   <br>
-    username: 'vwx', password: '123'
+  username: 'vwx', password: '123'
   <br>
   <br>
   Random Person 
+  <br>
   username: 'yz', password: '123'
 </details>
 
@@ -106,6 +107,8 @@ A visual of each of these features can be seen in the images below.
 <summary>Images of Webpage</summary>
 <br>
   Home Page:
+  ![home_page](https://user-images.githubusercontent.com/97071804/230525166-8cf5893e-b16b-4a40-8df7-0fe59fcb2f4c.png)
+
   ![home_page](https://user-images.githubusercontent.com/97071804/230524039-8a74c6c0-2647-429e-894d-d1c9bc44c3bf.png)
 
   Login Page:
