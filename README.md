@@ -71,22 +71,20 @@ A visual of each of these features can be seen in the images below.
 <details>
 <summary>Images of Webpage</summary>
 <br>
-  ###Home Page:
-![home_page](https://user-images.githubusercontent.com/97071804/230523103-dc17881f-e9bb-44b0-a5b2-27fe453fa1f1.png)
+  ##Home Page:
+  ![home_page](https://user-images.githubusercontent.com/97071804/230523103-dc17881f-e9bb-44b0-a5b2-27fe453fa1f1.png)
   
-  ###Login Page:
+  Login Page:
   ![login_page_login](https://user-images.githubusercontent.com/97071804/230523646-236aaff7-d771-4ea3-9084-e04d512572ad.png)
-![login_page_signup](https://user-images.githubusercontent.com/97071804/230523655-d194b888-e36e-4811-981b-b9c60f591921.png)
+  ![login_page_signup](https://user-images.githubusercontent.com/97071804/230523655-d194b888-e36e-4811-981b-b9c60f591921.png)
   
-  ###MyInventory Page:
+  MyInventory Page:
   ![myinventory_page](https://user-images.githubusercontent.com/97071804/230523713-315c58b4-08d0-41fd-ae61-643343b89a8f.png)
 ![myinventory_page_add](https://user-images.githubusercontent.com/97071804/230523718-78c83af9-11f2-4979-a0cf-e518b7f8be3b.png)
   
-  ###Details Page:
+  Details Page:
   ![details_page](https://user-images.githubusercontent.com/97071804/230523745-8d7f5b8f-ac54-47c5-848e-149d98c86898.png)
-![details_page_edit](https://user-images.githubusercontent.com/97071804/230523757-1a790ed9-ea79-4ebf-9fb7-e5081f383950.png)
-
-  
+  ![details_page_edit](https://user-images.githubusercontent.com/97071804/230523757-1a790ed9-ea79-4ebf-9fb7-e5081f383950.png)
 </details>
   
   
