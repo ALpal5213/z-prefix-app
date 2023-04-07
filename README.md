@@ -41,7 +41,7 @@ npm run reset
 npm start
 ```
 
-This will install all dependencies, migrate and seed the database, and then start up the server.
+This will install all dependencies, migrate and seed the database, and then start up the server on port 7999.
 
 Once the server is up and running, you can navigate to the frontend directory and run the following commands.
 
