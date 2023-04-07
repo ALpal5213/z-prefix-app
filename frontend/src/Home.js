@@ -6,7 +6,7 @@ import Card from './Card.js'
 
 // Display everyone's inventory
 const Home = () => {
-  const {items, setItems, currentUser} = useContext(ItemContext);
+  const {items, currentUser} = useContext(ItemContext);
   const {users} = useContext(LoginContext);
   const [query, setQuery] = useState('');
 
@@ -22,7 +22,7 @@ const Home = () => {
         }
       }
 
-      return item.item_name.includes(query) || item.user_id === userId;
+      return item.item_name.toLowerCase().includes(query) || item.user_id === userId;
     }
   })
 
@@ -36,7 +36,7 @@ const Home = () => {
         </Row>
         <Row>
           <Col className="input-wrapper">
-            <label className="input-block">Search By Product or Manager</label>
+            <label className="input-block">Search By Product or Manager:</label>
             <input className="input-block" type="text" placeholder="Search..." onChange={(e) => {setQuery(e.target.value)}}/>
           </Col>
         </Row>

@@ -26,15 +26,18 @@ const Login = () => {
         "Content-type": "application/json; charset=UTF-8"
       }
     })
-    .then(res => setUpdate(update));
+    .then(res => {
+      setUpdate(!update)
+      setSignup(false);
+    });
   }
 
   return (  
-    <Container>
+    <Container className="login-background">
       <Row>
         <Col className="input-wrapper">
-          {!signup && <h3>Login Here</h3>}
-          {!signup && <h5 onClick={() => {setSignup(true)}}>Or Sign Up</h5>}
+          {!signup && <h3>Log In Here</h3>}
+          {!signup && <h5 className="sign-login" onClick={() => {setSignup(true)}}>Or Sign Up</h5>}
           {!signup && <label className="input-block">Username</label>}
           {!signup && <input className="input-block" type="text" placeholder="Type in Username" onChange={(e) => {setUsername(e.target.value)}}/>}
           {!signup && <label className="input-block">Password</label>}
@@ -50,7 +53,7 @@ const Login = () => {
           }}>Login</button>}
 
           {signup && <h3>Sign Up Here</h3>}
-          {signup && <h5 onClick={() => {setSignup(false)}}>Or Back to Login</h5>}
+          {signup && <h5 className="sign-login" onClick={() => {setSignup(false)}}>Or Back to Log In</h5>}
           {signup && <label className="input-block">Tell Us Your First Name</label>}
           {signup && <input className="input-block" type="text" onChange={(e) => {setFirstName(e.target.value)}}/>}
           {signup && <label className="input-block">Tell Us Your Last Name</label>}

@@ -1,13 +1,13 @@
 
 import { Container, Col, Row } from 'react-bootstrap';
-import { useContext, useState }  from 'react'
+import { useContext }  from 'react'
 import { useNavigate } from 'react-router-dom';
 import { LoginContext } from './App';
 import './Navbar.css'
 
 const Navbar = () => {
   const Navigate = useNavigate();
-  const {users, setUsers, loggedIn, setLoggedIn, currentUser, setCurrentUser} = useContext(LoginContext);
+  const {loggedIn, setLoggedIn, currentUser, setCurrentUser} = useContext(LoginContext);
 
   return (  
     <Container className="nav-container" fluid>
@@ -21,11 +21,11 @@ const Navbar = () => {
         <Col className="nav-center" xs="12" md="4">
           {loggedIn && <div className="nav-text">Logged in as: {currentUser.first_name} {currentUser.last_name}</div>}
           {loggedIn && <div className="nav-text nav-route" onClick={() => {
-            setLoggedIn(false)
+            setLoggedIn(false);
             setCurrentUser(undefined);
             Navigate('/Login');
           }}>Logout</div>}
-          {!loggedIn && <div className="nav-text nav-route" onClick={() => {Navigate('/Login')}}>Login</div>}
+          {!loggedIn && <div className="nav-text nav-route" onClick={() => {Navigate('/Login')}}>Log In</div>}
         </Col>
       </Row>
     </Container>

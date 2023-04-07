@@ -1,6 +1,6 @@
 import React, { createContext, useEffect, useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Routes, Route, useNavigate } from 'react-router-dom'
+import { Routes, Route} from 'react-router-dom'
 import Home from './Home.js'
 import Navbar from './Navbar.js'
 import Details from './Details.js'
@@ -12,7 +12,6 @@ export const LoginContext = createContext();
 export const ItemContext = createContext();
 
 function App() {
-  const Navigate = useNavigate();
   const [items, setItems] = useState([]);
   const [users, setUsers] = useState([]);
   const [currentUser, setCurrentUser] = useState(undefined);
@@ -29,6 +28,7 @@ function App() {
       .then(res => res.json())
       .then(data => {
         setItems(data)
+        
         if(currentItem !== undefined) {
           for(let item of data) {
             if(item.id === currentItem.id) {
@@ -37,9 +37,8 @@ function App() {
           }  
         }
       })
+      // eslint-disable-next-line
   }, [loggedIn, update])
-
-  
 
   return (
     <LoginContext.Provider value={{

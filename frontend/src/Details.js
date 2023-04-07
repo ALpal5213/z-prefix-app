@@ -1,13 +1,13 @@
 import { Container, Col, Row } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
-import { useContext, useEffect, useState }  from 'react'
+import { useContext, useState }  from 'react'
 import { ItemContext, } from './App';
 
 const Details = () => {
   const Navigate = useNavigate();
-  const {currentItem, setCurrentItem, update, setUpdate, currentUser} = useContext(ItemContext);
+  const {currentItem, update, setUpdate, currentUser} = useContext(ItemContext);
   const [editable, setEditable] = useState(false);
-  const [authorized, setAuthorized] = useState(
+  const [authorized] = useState(
     !currentUser || currentItem.user_id !== currentUser.id ? false : true
   );
   const [itemName, setItemName] = useState(currentItem.item_name);
@@ -55,7 +55,7 @@ const Details = () => {
 
   return ( 
     <>
-      {currentItem && <Container>
+      {currentItem && <Container className="details-background">
         <Row>
           <Col>
             <h2>Item Details</h2>
@@ -63,7 +63,7 @@ const Details = () => {
         </Row>
         <Row>
           <Col xs="12" md="4">
-            <img src={currentItem.image} width="200"/>
+            <img src={currentItem.image} alt="" width="300"/>
           </Col>
           <Col className="input-wrapper" xs="12" md="8">
             {!editable && <h3>{currentItem.item_name}</h3>}

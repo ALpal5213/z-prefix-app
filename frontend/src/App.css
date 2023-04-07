@@ -1,3 +1,10 @@
+body {
+  background-image: url('https://www.marineinsight.com/wp-content/uploads/2021/09/Functions-of-a-Warehouse-%E2%80%93-A-Detailed-Guide.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
 .input-wrapper {
   float: left;
 }
@@ -11,7 +18,7 @@
 .input-desc {
   display: block;
   width: 75%;
-  height: 200px;
+  height: 100px;
   border-radius: 5px;
   overflow-y: auto;
 }
@@ -27,3 +34,33 @@ button {
 button:hover {
   background-color: #7575bb;
 }
+
+.sign-login {
+  color: blue;
+  width: 180px;
+}
+
+.sign-login:hover {
+  cursor: pointer;
+  font-size: 22px;
+  margin-bottom: 6px;
+}
+
+.details-background {
+  border: solid black 1px;
+  border-radius: 10px;
+  background-color: white;
+  height: 100%;
+  width: 95%;
+  padding-bottom: 50px;
+}
+
+.login-background {
+  border: solid black 1px;
+  border-radius: 10px;
+  background-color: white;
+  height: 100%;
+  padding-bottom: 20px;
+  width: 300px;
+}
+

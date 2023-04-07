@@ -8,7 +8,6 @@ const MyInventory = () => {
   const Navigate = useNavigate();
   const {loggedIn} = useContext(LoginContext);
   const { currentUser, items, update, setUpdate } = useContext(ItemContext);
-  const [additions, setAdditions] = useState(false);
   const [show, setShow] = useState(false);
   const [itemName, setItemName] = useState('');
   const [description, setDescription] = useState('');
@@ -54,11 +53,11 @@ const MyInventory = () => {
           <Col>
             {!show && <button type="button" onClick={() => {setShow(!show)}}>Add Item</button>}
             {show && <div className="input-wrapper">
-              <label className="input-block">Item Name</label>
+              <label className="input-block">Item Name:</label>
               <input className="input-block" type="text" placeholder="Item Name..." onChange={(e) => setItemName(e.target.value)}/>
-              <label className="input-block">Quantity</label>
+              <label className="input-block">Quantity:</label>
               <input className="input-block" type="number" placeholder="0" onChange={(e) => setQuantity(parseInt(e.target.value))}/>
-              <label className="input-block">Description</label>
+              <label className="input-block">Description:</label>
               <input className="input-block" type="text" placeholder="Description..." onChange={(e) => setDescription(e.target.value)}/>
               <button type="button" onClick={handlePost}>Add</button>
               <button type="button" onClick={() => setShow(false)}>Cancel</button>
