@@ -12,11 +12,25 @@ To bring it down and remove docker images, you can run...
 `docker-compose down --rmi all`
 
 ## If that doesn't work...
-You should be able to run it as you typically would. 
+You should be able to run it as you typically would. I used the docker run command from the database learn content to create a docker container and naviagte into it.
 
-A database will need to be created. I named mine `inventorydb`
+```
+docker run --rm --name pg-docker -e POSTGRES_PASSWORD=docker -d -p 5432:5432 \
+-v $HOME/docker/volumes/postgres:/var/lib/postgresql/data postgres
 
-The knex file development section will also need to be modified to have 'localhost' instead of 'db'
+docker ps -a
+
+docker exec -it <container-id> bash
+
+psql -U postgres
+```
+
+Once the container is created, the database will also need to be created. I named mine `inventorydb`
+
+`CREATE DATABASE inventorydb;`
+
+
+The knex file development section inside the backend directory will also need to be modified to have 'localhost' instead of 'db'
 
 `connection: 'postgres://postgres:docker@localhost/inventorydb'`
 
@@ -28,7 +42,7 @@ npm run reset
 npm start
 ```
 
-This will install all npm packages, migrate and seed the database, and then start up the server.
+This will install all dependencies, migrate and seed the database, and then start up the server.
 
 Once the server is up and running, you can navigate to the frontend directory and run the following commands.
 
