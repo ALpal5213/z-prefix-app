@@ -13,3 +13,8 @@ To bring it down and remove docker images, you can run...
 
 ## If that doesn't Work
 If that doesn't work, I trust that my instructors can handle it... Just kidding. 
+
+You should be able to run it as you would typically. A database will need to be created. I named mine `inventorydb`
+
+The knex file will also need to be modified to have 'localhost' instead of 'db'
+`connection: 'postgres://postgres:docker@localhost/inventorydb'`
