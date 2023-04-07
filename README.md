@@ -46,13 +46,28 @@ The website consists of 4 different pages Home, Login, MyInventory, and Details.
 
 <details>
 <summary>Seeded User Accounts</summary>
-<br>
+  <br>
   Adrian Lewis 
-    username: 'abc'
-    password: '123'
+    username: 'abc', password: '123'
+  <br>
+  Joe Shmoe (can't log in)
+    username: null, password: null
+  <br>
+  Slim Shady 
+    username: 'def', password: '123'
   
-  {first_name: 'Joe', last_name: 'Shmoe', username: null, password: null},
-  {first_name: 'Slim', last_name: 'Shady', username: 'def', password: '123'},
+  <br>
+  
+  
+  <br>
+  
+  
+  <br>
+  
+  
+  <br>
+  
+  
   {first_name: 'Lady Emilia Von Eldritch', last_name: 'the 17th', username: 'ghi', password: '123'},
   {first_name: 'Random', last_name: 'Person', username: 'jkl', password: '123'},
   {first_name: 'Random', last_name: 'Person', username: 'mno', password: '123'},
@@ -71,9 +86,9 @@ A visual of each of these features can be seen in the images below.
 <details>
 <summary>Images of Webpage</summary>
 <br>
-  ##Home Page:
-  ![home_page](https://user-images.githubusercontent.com/97071804/230523103-dc17881f-e9bb-44b0-a5b2-27fe453fa1f1.png)
-  
+  Home Page:
+  ![home_page](https://user-images.githubusercontent.com/97071804/230524039-8a74c6c0-2647-429e-894d-d1c9bc44c3bf.png)
+
   Login Page:
   ![login_page_login](https://user-images.githubusercontent.com/97071804/230523646-236aaff7-d771-4ea3-9084-e04d512572ad.png)
   ![login_page_signup](https://user-images.githubusercontent.com/97071804/230523655-d194b888-e36e-4811-981b-b9c60f591921.png)
