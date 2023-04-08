@@ -83,31 +83,6 @@ The website consists of 4 different pages Home, Login, MyInventory, and Details.
   Random Person 
   <br>
   username: 'jkl', password: '123'
-  <br>
-  <br>
-  Random Person 
-  <br>
-  username: 'mno', password: '123'
-  <br>
-  <br>
-  Random Person 
-  <br>
-  username: 'pqr', password: '123'
-  <br>
-  <br>
-  Random Person
-  <br>
-  username: 'stu', password: '123'
-  <br>
-  <br>
-  Random Person 
-  <br>
-  username: 'vwx', password: '123'
-  <br>
-  <br>
-  Random Person 
-  <br>
-  username: 'yz', password: '123'
 </details>
 
 After logging in the user will be sent to the MyInventory page where they will be presented with all items that belong to the logged in user. On the MyInventory page, you can also add items to the personal inventory. 
